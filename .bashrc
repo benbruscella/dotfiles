@@ -32,4 +32,18 @@ export LSCOLORS='gxfxcxdxbxegedabagacad'
 export PATH=/usr/local/mysql-5.1.46-osx10.6-x86_64/bin:$PATH
 
 
+# History
+export HISTCONTROL=erasedups # Don't keep dupes
+export HISTSIZE=10000        # Keep a shedload
+shopt -s histappend          # Append, not overwrite
+
+# Welcome Screen &
+# System Information:
+clear
+echo -ne "${LIGHTRED}" "Hello, $USER";
+echo -e "${LIGHTRED}" "Today is: \t${LIGHTGRAY}" `date`;
+echo -e "${LIGHTRED}" "Kernel Information: \t${LIGHTGRAY}" `uname -smr`
+echo -ne "${cyan}";uptime;echo ""
+tt `pwd`
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.

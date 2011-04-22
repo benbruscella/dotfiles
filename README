@@ -10,3 +10,15 @@
        The individual login shell cleanup file, executed when a login shell exits
 ~/.inputrc
        Individual readline initialization file
+
+
+
+
+
+.bash_profile is executed when you login. Stuff you put in there might be your PATH and other important environment variables.
+
+.bashrc is used for non login shells. I'm not sure what that means. I know that RedHat executes it everytime you start another shell (su to this user or simply calling bash again) You might want to put aliases in there but again I am not sure what that means. I simply ignore it myself.
+
+.profile is the equivalent of .bash_profile for the root. I think the name is changed to let other shells (csh, sh, tcsh) use it as well. (you don't need one as a user)
+
+There is also .bash_logout wich executes at, yeah good guess...logout. You might want to stop deamons or even make a little housekeeping . You can also add "clear" there if you want to clear the screen when you log out.

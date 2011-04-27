@@ -15,9 +15,8 @@ alias pin="cd ~/Projects/webmoco/onpin.com"
 alias aus="cd ~/Projects/tlb/ausrates"
 alias scan="cd ~/Projects/tlb/Scanoutlet"
 alias eg="cd ~/Projects/webmoco/egrowers"
-alias icp="cd ~/Projects/d27/inlink-cp/trunk"
 alias trolley="cd ~/Projects/tlb/trolley-rescue"
-
+alias livescene="cd ~/Github/livescene"
 
 #Terminal
 function tt() { echo -n -e "\033]0;$@\007";}

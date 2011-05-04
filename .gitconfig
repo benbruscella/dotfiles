@@ -1,0 +1,16 @@
+[user]
+	name = Ben
+	email = benbruscella@gmail.com
+[pivotal]
+	api-token = b497b1d3778bcaa12204eeb4568ee481
+	full-name = Ben Bruscella
+	integration = develop
+	only-mine = true
+	integration-branch = integration
+[alias]
+	st = status
+	co = checkout
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
+

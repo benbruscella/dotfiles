@@ -11,12 +11,12 @@ alias gd="git diff -w | mate"
 alias svnaddr="svn status | grep "^\?" | awk '{print $2}' | xargs svn add"
 
 #Projects
-alias pin="cd ~/Projects/webmoco/onpin.com"
-alias aus="cd ~/Projects/tlb/ausrates"
-alias scan="cd ~/Projects/tlb/Scanoutlet"
-alias eg="cd ~/Projects/webmoco/egrowers"
-alias trolley="cd ~/Projects/tlb/trolley-rescue"
-alias livescene="cd ~/Github/livescene"
+alias onpin="cd ~/Projects/Assembla/onpin.com"
+alias ausrates="cd ~/Projects/Assembla/ausrates"
+alias scanoutlet="cd ~/Projects/GitHub/Scanoutlet"
+alias trolleyrescue="cd ~/Projects/Assembla/trolley-rescue"
+alias livescenew="cd ~/Projects/Github/LiveScene-Web"
+alias livescenei="cd ~/Projects/Github/LiveScene-iPhone"
 
 #Terminal
 function tt() { echo -n -e "\033]0;$@\007";}

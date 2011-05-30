@@ -14,7 +14,8 @@ alias svnaddr="svn status | grep "^\?" | awk '{print $2}' | xargs svn add"
 alias onpin="cd ~/Projects/Assembla/onpin.com"
 alias ausrates="cd ~/Projects/Assembla/ausrates"
 alias scanoutlet="cd ~/Projects/GitHub/Scanoutlet"
-alias trolleyrescue="cd ~/Projects/Assembla/trolley-rescue"
+alias trolleyrescuei="cd ~/Projects/Assembla/fault-hub/iPhone/TrolleyRescue"
+alias trolleyrescuew="cd ~/Projects/Assembla/trolley-rescue"
 alias livescenew="cd ~/Projects/Github/LiveScene-Web"
 alias livescenei="cd ~/Projects/Github/LiveScene-iPhone"
 
@@ -28,7 +29,7 @@ export CLICOLOR='Yes'
 export LSCOLORS='gxfxcxdxbxegedabagacad'
 
 # PATH mods
-export PATH=/usr/local/mysql-5.1.46-osx10.6-x86_64/bin:$PATH
+export PATH=/usr/local/mysql-5.1.46-osx10.6-x86_64/bin:/user/bin:$PATH
 
 
 # History

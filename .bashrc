@@ -32,8 +32,9 @@ export CLICOLOR='Yes'
 export LSCOLORS='gxfxcxdxbxegedabagacad'
 
 # PATH mods
-export PATH=/usr/local/mysql-5.1.46-osx10.6-x86_64/bin:/user/bin:$PATH
-
+export PATH=/usr/local/mysql-5.1.58-osx10.6-x86_64/bin:/user/bin:$PATH
+#for symbolicatecrash
+export PATH=/Developer/Platforms/iPhoneOS.platform/Developer/Library/PrivateFrameworks/DTDeviceKit.framework/Versions/A/Resources:$PATH
 
 # History
 export HISTCONTROL=erasedups # Don't keep dupes

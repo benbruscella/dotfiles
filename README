@@ -11,10 +11,6 @@
 ~/.inputrc
        Individual readline initialization file
 
-
-
-
-
 .bash_profile is executed when you login. Stuff you put in there might be your PATH and other important environment variables.
 
 .bashrc is used for non login shells. I'm not sure what that means. I know that RedHat executes it everytime you start another shell (su to this user or simply calling bash again) You might want to put aliases in there but again I am not sure what that means. I simply ignore it myself.

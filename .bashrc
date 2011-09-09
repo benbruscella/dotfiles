@@ -27,8 +27,12 @@ function tt() { echo -n -e "\033]0;$@\007";}
 
 # Environment Variables
 export EDITOR=mate
-export LS_OPTIONS='--color=auto'
-export CLICOLOR='Yes'
+# -- Terminal White
+# export CLICOLOR=1
+# export LSCOLORS=ExFxCxDxBxegedabagacad
+# -- Terminal Black
+export CLICOLOR=1
+# export LSCOLORS='gxfxcxdxbxegedabagacad'
 export LSCOLORS='gxfxcxdxbxegedabagacad'
 
 # PATH mods

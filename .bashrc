@@ -11,8 +11,12 @@ alias gd="git diff -w | mate"
 alias svnaddr="svn status | grep "^\?" | awk '{print $2}' | xargs svn add"
 
 #Projects
-alias onpin="cd ~/Projects/Assembla/onpin.com"
-alias ausrates="cd ~/Projects/Assembla/ausrates"
+alias thetransferstation="cd ~/Projects/BitBucket/the-transfer-station"
+alias pumpkindigital="cd ~/Projects/BitBucket/pumpkin-digital"
+alias dolcefantasia="cd ~/Projects/BitBucket/dolce-fantasia"
+alias lucasmorris="cd ~/Projects/BitBucket/lucas-morris"
+
+alias onpin="cd ~/Projects/Assembla/onpin"
 alias scanoutlet="cd ~/Projects/GitHub/Scanoutlet"
 alias trolleyrescuei="cd ~/Projects/Assembla/fault-hub/iPhone/TrolleyRescue"
 alias trolleyrescuew="cd ~/Projects/Assembla/trolley-rescue"
@@ -20,7 +24,6 @@ alias livescenew="cd ~/Projects/Github/LiveScene-Web"
 alias livescenei="cd ~/Projects/Github/LiveScene-iPhone"
 alias expensedaddy="cd ~/Projects/Github/ExpenseDaddy"
 alias knowrisk="cd ~/Projects/Assembla/knowrisk-iphone"
-
 
 #Terminal
 function tt() { echo -n -e "\033]0;$@\007";}
@@ -39,6 +42,8 @@ export LSCOLORS='gxfxcxdxbxegedabagacad'
 export PATH=/usr/local/mysql-5.1.58-osx10.6-x86_64/bin:/user/bin:$PATH
 #for symbolicatecrash
 export PATH=/Developer/Platforms/iPhoneOS.platform/Developer/Library/PrivateFrameworks/DTDeviceKit.framework/Versions/A/Resources:$PATH
+# for postgres
+PATH=/usr/local/bin:$PATH
 
 # History
 export HISTCONTROL=erasedups # Don't keep dupes

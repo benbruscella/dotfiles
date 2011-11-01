@@ -15,6 +15,7 @@ alias thetransferstation="cd ~/Projects/BitBucket/the-transfer-station"
 alias pumpkindigital="cd ~/Projects/BitBucket/pumpkin-digital"
 alias dolcefantasia="cd ~/Projects/BitBucket/dolce-fantasia"
 alias lucasmorris="cd ~/Projects/BitBucket/lucas-morris"
+alias karenmilward="cd ~/Projects/BitBucket/karen-milward"
 
 alias onpin="cd ~/Projects/Assembla/onpin"
 alias scanoutlet="cd ~/Projects/GitHub/Scanoutlet"

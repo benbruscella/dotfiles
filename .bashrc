@@ -10,14 +10,19 @@ alias ll='ls -alF'
 alias gd="git diff -w | mate"
 alias svnaddr="svn status | grep "^\?" | awk '{print $2}' | xargs svn add"
 
-#Projects
-alias thetransferstation="cd ~/Projects/BitBucket/the-transfer-station"
-alias pumpkindigital="cd ~/Projects/BitBucket/pumpkin-digital"
+# Current Projects
 alias dolcefantasia="cd ~/Projects/BitBucket/dolce-fantasia"
-alias lucasmorris="cd ~/Projects/BitBucket/lucas-morris"
+alias egrowers="cd ~/Projects/BitBucket/egrowers"
 alias karenmilward="cd ~/Projects/BitBucket/karen-milward"
+alias logicbox="cd ~/Projects/BitBucket/logicbox"
+alias lucasmorris="cd ~/Projects/BitBucket/lucas-morris"
+alias occupyagent="cd ~/Projects/BitBucket/occupy-agent"
+alias pumpkindigital="cd ~/Projects/BitBucket/pumpkin-digital"
+alias thetransferstation="cd ~/Projects/BitBucket/the-transfer-station"
 
+# Other Projects
 alias onpin="cd ~/Projects/Assembla/onpin"
+alias geoapi="cd ~/Projects/BitBucket/geoapi"
 alias scanoutlet="cd ~/Projects/GitHub/Scanoutlet"
 alias trolleyrescuei="cd ~/Projects/Assembla/fault-hub/iPhone/TrolleyRescue"
 alias trolleyrescuew="cd ~/Projects/Assembla/trolley-rescue"

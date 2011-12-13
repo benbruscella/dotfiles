@@ -30,6 +30,7 @@ alias livescenew="cd ~/Projects/Github/LiveScene-Web"
 alias livescenei="cd ~/Projects/Github/LiveScene-iPhone"
 alias expensedaddy="cd ~/Projects/Github/ExpenseDaddy"
 alias knowrisk="cd ~/Projects/Assembla/knowrisk-iphone"
+alias inlink="cd ~/Projects/Unfuddle/inlink-client-portal"
 
 #Terminal
 function tt() { echo -n -e "\033]0;$@\007";}

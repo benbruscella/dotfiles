@@ -20,6 +20,7 @@ alias occupyagent="cd ~/Projects/BitBucket/occupy-agent"
 alias pumpkindigital="cd ~/Projects/BitBucket/pumpkin-digital"
 alias thetransferstation="cd ~/Projects/BitBucket/the-transfer-station"
 alias cherrycustoms="cd ~/Projects/BitBucket/cherry-customs"
+alias gourmetgoldmine="cd ~/Projects/BitBucket/gourmet-goldmine"
 
 # Other Projects
 alias onpin="cd ~/Projects/Assembla/onpin"

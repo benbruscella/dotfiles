@@ -34,6 +34,7 @@ alias expensedaddy="cd ~/Projects/Github/ExpenseDaddy"
 alias knowrisk="cd ~/Projects/Assembla/knowrisk-iphone"
 alias inlink="cd ~/Projects/Unfuddle/inlink-client-portal"
 alias handygopher="cd ~/Projects/BitBucket/handy-gopher"
+alias sensonator="cd ~/Projects/BitBucket/sensonator"
 
 #Terminal
 function tt() { echo -n -e "\033]0;$@\007";}

@@ -11,18 +11,21 @@ alias gd="git diff -w | mate"
 alias svnaddr="svn status | grep "^\?" | awk '{print $2}' | xargs svn add"
 
 # Current Projects
-alias dolcefantasia="cd ~/Projects/BitBucket/dolce-fantasia"
 alias egrowers="cd ~/Projects/BitBucket/egrowers"
-alias karenmilward="cd ~/Projects/BitBucket/karen-milward"
 alias logicbox="cd ~/Projects/BitBucket/logicbox"
-alias lucasmorris="cd ~/Projects/BitBucket/lucas-morris"
-alias occupyagent="cd ~/Projects/BitBucket/occupy-agent"
-alias pumpkindigital="cd ~/Projects/BitBucket/pumpkin-digital"
 alias thetransferstation="cd ~/Projects/BitBucket/the-transfer-station"
-alias cherrycustoms="cd ~/Projects/BitBucket/cherry-customs"
-alias gourmetgoldmine="cd ~/Projects/BitBucket/gourmet-goldmine"
+alias handygopher="cd ~/Projects/BitBucket/handy-gopher"
+alias sensonator="cd ~/Projects/BitBucket/sensonator"
+alias cncr="cd ~/Projects/BitBucket/cncr"
 
 # Other Projects
+alias lucasmorris="cd ~/Projects/BitBucket/lucas-morris"
+alias dolcefantasia="cd ~/Projects/BitBucket/dolce-fantasia"
+alias cherrycustoms="cd ~/Projects/BitBucket/cherry-customs"
+alias gourmetgoldmine="cd ~/Projects/BitBucket/gourmet-goldmine"
+alias pumpkindigital="cd ~/Projects/BitBucket/pumpkin-digital"
+alias occupyagent="cd ~/Projects/BitBucket/occupy-agent"
+alias karenmilward="cd ~/Projects/BitBucket/karen-milward"
 alias onpin="cd ~/Projects/Assembla/onpin"
 alias geoapi="cd ~/Projects/BitBucket/geoapi"
 alias scanoutlet="cd ~/Projects/GitHub/Scanoutlet"
@@ -33,8 +36,6 @@ alias livescenei="cd ~/Projects/Github/LiveScene-iPhone"
 alias expensedaddy="cd ~/Projects/Github/ExpenseDaddy"
 alias knowrisk="cd ~/Projects/Assembla/knowrisk-iphone"
 alias inlink="cd ~/Projects/Unfuddle/inlink-client-portal"
-alias handygopher="cd ~/Projects/BitBucket/handy-gopher"
-alias sensonator="cd ~/Projects/BitBucket/sensonator"
 
 #Terminal
 function tt() { echo -n -e "\033]0;$@\007";}
@@ -112,3 +113,5 @@ tt `pwd`
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
 
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

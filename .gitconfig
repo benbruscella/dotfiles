@@ -9,6 +9,7 @@
 	integration-branch = integration
 [alias]
 	st = status
+	ci = commit
 	co = checkout
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 	type = cat-file -t

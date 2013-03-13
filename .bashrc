@@ -6,28 +6,54 @@ alias l='ls -CF'
 alias la='ls -A'
 alias ll='ls -alF'
 
-#Git and svn
+# Tim
+alias timdeploy='cap production_bcn deploy; cap production_waf deploy; cap production_n11 deploy; cap deploy;'
+alias timdeploymigrations='cap deploy:migrations; cap production_waf deploy:migrations; cap production_n11 deploy:migrations; cap production_bcn deploy:migrations'
+
+alias rs_tts="rails s"
+alias rs_n11="rails s -e development_n11 -p 3001"
+alias rs_waf="rails s -e development_waf -p 3002"
+alias rs_bcn="rails s -e development_bcn -p 3003"
+
+alias rc_tts="rails s"
+alias rc_n11="rails c development_n11"
+alias rc_waf="rails c development_waf"
+alias rc_bcn="rails c development_bcn"
+
+# GIT
 alias gd="git diff -w | mate"
+alias gst="git status --porcelain"
+alias gad="git add ."
+alias gco="git commit -am "
+
+# SVN
 alias svnaddr="svn status | grep "^\?" | awk '{print $2}' | xargs svn add"
 
-# Current Projects
-alias egrowers="cd ~/Projects/BitBucket/egrowers"
-alias logicbox="cd ~/Projects/BitBucket/logicbox"
-alias thetransferstation="cd ~/Projects/BitBucket/the-transfer-station"
-alias handygopher="cd ~/Projects/BitBucket/handy-gopher"
-alias sensonator="cd ~/Projects/BitBucket/sensonator"
-alias cncr="cd ~/Projects/BitBucket/cncr"
-
-# Other Projects
-alias lucasmorris="cd ~/Projects/BitBucket/lucas-morris"
-alias dolcefantasia="cd ~/Projects/BitBucket/dolce-fantasia"
+# BitBucket
+alias bitbucket="cd ~/Projects/BitBucket"
+alias amiconi="cd ~/Projects/BitBucket/amiconi"
 alias cherrycustoms="cd ~/Projects/BitBucket/cherry-customs"
+alias cncr="cd ~/Projects/BitBucket/cncr"
+alias dolcefantasia="cd ~/Projects/BitBucket/dolce-fantasia"
+alias egrowers="cd ~/Projects/BitBucket/egrowers"
 alias gourmetgoldmine="cd ~/Projects/BitBucket/gourmet-goldmine"
-alias pumpkindigital="cd ~/Projects/BitBucket/pumpkin-digital"
-alias occupyagent="cd ~/Projects/BitBucket/occupy-agent"
+alias handygopher="cd ~/Projects/BitBucket/handy-gopher"
 alias karenmilward="cd ~/Projects/BitBucket/karen-milward"
+alias logicbox="cd ~/Projects/BitBucket/logicbox"
+alias lucasmorris="cd ~/Projects/BitBucket/lucas-morris"
+alias lvdohnt="cd ~/Projects/BitBucket/lvdohnt"
+alias occupyagent="cd ~/Projects/BitBucket/occupy-agent"
+alias propertypricewatch="cd ~/Projects/BitBucket/propertypricewatch"
+alias pumpkindigital="cd ~/Projects/BitBucket/pumpkin-digital"
+alias sensonator="cd ~/Projects/BitBucket/sensonator"
+alias rev="cd ~/Projects/BitBucket/rev-mobile"
+alias revassets="cd ~/Projects/BitBucket/rev-mobile/app/assets"
+alias smartsell="cd ~/Projects/BitBucket/smart-sell"
+alias smartbroker="cd ~/Projects/BitBucket/smart-broker-web"
+alias thetransferstation="cd ~/Projects/BitBucket/the-transfer-station"
+
+# Others
 alias onpin="cd ~/Projects/Assembla/onpin"
-alias geoapi="cd ~/Projects/BitBucket/geoapi"
 alias scanoutlet="cd ~/Projects/GitHub/Scanoutlet"
 alias trolleyrescuei="cd ~/Projects/Assembla/fault-hub/iPhone/TrolleyRescue"
 alias trolleyrescuew="cd ~/Projects/Assembla/trolley-rescue"
@@ -52,7 +78,7 @@ export CLICOLOR=1
 export LSCOLORS='gxfxcxdxbxegedabagacad'
 
 # PATH mods
-export PATH=/usr/local/mysql-5.1.58-osx10.6-x86_64/bin:/user/bin:$PATH
+export PATH=/usr/local/mysql-5.1.63-osx10.6-x86_64/bin:/user/bin:$PATH
 #for symbolicatecrash
 export PATH=/Developer/Platforms/iPhoneOS.platform/Developer/Library/PrivateFrameworks/DTDeviceKit.framework/Versions/A/Resources:$PATH
 # for postgres
@@ -116,3 +142,10 @@ tt `pwd`
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 PATH=$PATH:$HOME/Dropbox/bin # Add Dropbox bin
+
+PATH=$PATH:/usr/local/share/npm/bin/ # npm modules
+
+
+export WORKON_HOME=$HOME/.virtualenvs
+# export PROJECT_HOME=$HOME/directory-you-do-development-in
+source /usr/local/bin/virtualenvwrapper.sh

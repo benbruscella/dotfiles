@@ -149,3 +149,6 @@ PATH=$PATH:/usr/local/share/npm/bin/ # npm modules
 export WORKON_HOME=$HOME/.virtualenvs
 # export PROJECT_HOME=$HOME/directory-you-do-development-in
 source /usr/local/bin/virtualenvwrapper.sh
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

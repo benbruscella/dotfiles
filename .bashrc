@@ -7,18 +7,14 @@ alias la='ls -A'
 alias ll='ls -alF'
 
 # Tim
-alias timdeploy='cap production_bcn deploy; cap production_waf deploy; cap production_n11 deploy; cap deploy;'
-alias timdeploymigrations='cap deploy:migrations; cap production_waf deploy:migrations; cap production_n11 deploy:migrations; cap production_bcn deploy:migrations'
+alias timdeploy='cap production_waf deploy; cap deploy'
+alias timdeploymigrations='cap deploy:migrations; cap production_waf deploy:migrations'
 
 alias rs_tts="rails s"
-alias rs_n11="rails s -e development_n11 -p 3001"
 alias rs_waf="rails s -e development_waf -p 3002"
-alias rs_bcn="rails s -e development_bcn -p 3003"
 
 alias rc_tts="rails s"
-alias rc_n11="rails c development_n11"
 alias rc_waf="rails c development_waf"
-alias rc_bcn="rails c development_bcn"
 
 # GIT
 alias gd="git diff -w | mate"
@@ -30,38 +26,16 @@ alias gco="git commit -am "
 alias svnaddr="svn status | grep "^\?" | awk '{print $2}' | xargs svn add"
 
 # BitBucket
-alias bitbucket="cd ~/Projects/BitBucket"
-alias amiconi="cd ~/Projects/BitBucket/amiconi"
-alias cherrycustoms="cd ~/Projects/BitBucket/cherry-customs"
-alias cncr="cd ~/Projects/BitBucket/cncr"
-alias dolcefantasia="cd ~/Projects/BitBucket/dolce-fantasia"
-alias egrowers="cd ~/Projects/BitBucket/egrowers"
-alias gourmetgoldmine="cd ~/Projects/BitBucket/gourmet-goldmine"
-alias handygopher="cd ~/Projects/BitBucket/handy-gopher"
-alias karenmilward="cd ~/Projects/BitBucket/karen-milward"
-alias logicbox="cd ~/Projects/BitBucket/logicbox"
-alias lucasmorris="cd ~/Projects/BitBucket/lucas-morris"
-alias lvdohnt="cd ~/Projects/BitBucket/lvdohnt"
-alias occupyagent="cd ~/Projects/BitBucket/occupy-agent"
-alias propertypricewatch="cd ~/Projects/BitBucket/propertypricewatch"
-alias pumpkindigital="cd ~/Projects/BitBucket/pumpkin-digital"
-alias sensonator="cd ~/Projects/BitBucket/sensonator"
-alias rev="cd ~/Projects/BitBucket/rev-mobile"
-alias revassets="cd ~/Projects/BitBucket/rev-mobile/app/assets"
-alias smartsell="cd ~/Projects/BitBucket/smart-sell"
-alias smartbroker="cd ~/Projects/BitBucket/smart-broker-web"
-alias thetransferstation="cd ~/Projects/BitBucket/the-transfer-station"
-
-# Others
-alias onpin="cd ~/Projects/Assembla/onpin"
-alias scanoutlet="cd ~/Projects/GitHub/Scanoutlet"
-alias trolleyrescuei="cd ~/Projects/Assembla/fault-hub/iPhone/TrolleyRescue"
-alias trolleyrescuew="cd ~/Projects/Assembla/trolley-rescue"
-alias livescenew="cd ~/Projects/Github/LiveScene-Web"
-alias livescenei="cd ~/Projects/Github/LiveScene-iPhone"
-alias expensedaddy="cd ~/Projects/Github/ExpenseDaddy"
-alias knowrisk="cd ~/Projects/Assembla/knowrisk-iphone"
-alias inlink="cd ~/Projects/Unfuddle/inlink-client-portal"
+alias bb="cd ~/Projects/BitBucket"
+alias or="cd ~/Projects/BitBucket/cncr"
+alias gg="cd ~/Projects/BitBucket/gourmet-goldmine"
+alias lb="cd ~/Projects/BitBucket/logicbox"
+alias sens="cd ~/Projects/BitBucket/sensonator"
+alias sb="cd ~/Projects/BitBucket/smart-broker-web"
+alias bcn="cd ~/Projects/BitBucket/bloggerconnect"
+alias tts="cd ~/Projects/BitBucket/the-transfer-station"
+alias waf="cd ~/Projects/BitBucket/wineandfoodhub"
+alias n11="cd ~/Projects/BitBucket/net-101"
 
 #Terminal
 function tt() { echo -n -e "\033]0;$@\007";}
